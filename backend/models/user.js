@@ -19,7 +19,6 @@ const userSchema = new Schema(
     },
     email: {
       type: String,
-      trim: true,
       required: true,
       unique: true,
     },
@@ -30,7 +29,6 @@ const userSchema = new Schema(
 
     encry_password: {
       type: String,
-      required: true,
     },
     salt: String,
     role: {
